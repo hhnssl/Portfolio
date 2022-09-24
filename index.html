@@ -1,26 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./assets/css/styles.css" />
 
-    <!-- 아이콘 -->
-    <link
-      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
-      rel="stylesheet"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./assets/css/styles.css" />
 
-    <title>오한솔 포트폴리오</title>
-  </head>
-  <body>
-    <main class=""></main>
+  <!-- 폰트 -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Poppins:wght@100;200;300;400;500;600;800;900&display=swap"
+    rel="stylesheet">
 
-    <!--  -->
-    <script src="https://unpkg.com/scrollreveal"></script>
 
-    <!-- main js -->
-    <script src="./assets/js/main.js"></script>
-  </body>
+  <!-- 아이콘 -->
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+
+  <title>오한솔 포트폴리오</title>
+</head>
+
+<body>
+  <!-- 헤더 -->
+  <header id="header">
+    <div class="header__anchors wrapper">
+      <h1 class="header__title">
+        <a href="#">FE Developer <strong class="name-strong">오한솔</strong></a>
+      </h1>
+
+      <nav class="nav" id="nav">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="#">Home</a></li>
+          <li class="nav__item"><a href="#">About</a></li>
+          <li class="nav__item"><a href="#">Skills</a></li>
+          <li class="nav__item"><a href="#">Projects</a></li>
+          <li class="nav__item"><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- 메인 -->
+  <main id="main">
+    <section class="home wrapper" id="home">
+      <div class="home__intro">
+        <h2>
+          안녕하세요, <br />
+          프론트엔드 개발자<br />
+          <strong class="">오한솔</strong>입니다.
+        </h2>
+
+        <a class="resume-link" href="https://nebula-hisser-ddb.notion.site/FE-37b718590d364407b0b9953df7fb6b44"
+          target="_blank">
+          이력서 보기
+        </a href="#">
+      </div>
+
+      <div class="home__channel">
+        <a href="https://github.com/hhnssl" target="_blank">
+          <i class='bx bxl-github'></i>
+        </a>
+        <a href="https://velog.io/@losnah5h" target="_blank">
+          <i class='bx bxl-blogger'></i>
+        </a>
+      </div>
+
+      <div class="home__photo"></div>
+    </section>
+  </main>
+
+  <!-- 푸터 -->
+  <footer></footer>
+
+  <!-- ScrollReveal 라이브러리 -->
+  <script src="https://unpkg.com/scrollreveal"></script>
+
+  <!-- main js -->
+  <script src="./assets/js/main.js"></script>
+</body>
+
 </html>
