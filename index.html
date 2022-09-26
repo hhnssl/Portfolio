@@ -23,13 +23,13 @@
 
 <body>
   <!-- 헤더 -->
-  <header id="header">
-    <div class="header__anchors wrapper">
+  <header class="layout-header" id="header">
+    <div class="header__anchors layout-wrapper">
       <h1 class="header__title">
         <a href="#">FE Developer <strong class="name-strong">오한솔</strong></a>
       </h1>
 
-      <nav class="nav" id="nav">
+      <nav class="header__nav" id="nav">
         <ul class="nav__list">
           <li class="nav__item"><a href="#">Home</a></li>
           <li class="nav__item"><a href="#">About</a></li>
@@ -43,31 +43,44 @@
 
   <!-- 메인 -->
   <main id="main">
-    <section class="home wrapper" id="home">
-      <div class="home__intro">
-        <h2>
+    <!-- Home -->
+    <section class="home layout-wrapper" id="home">
+      <div class="home__profile">
+        <h2 class="home__intro">
           안녕하세요, <br />
           프론트엔드 개발자<br />
-          <strong class="">오한솔</strong>입니다.
+          <strong class="name-strong">오한솔</strong>입니다.
         </h2>
 
-        <a class="resume-link" href="https://nebula-hisser-ddb.notion.site/FE-37b718590d364407b0b9953df7fb6b44"
-          target="_blank">
-          이력서 보기
-        </a href="#">
+        <div class="home__channel">
+          <a class="resume-link mr-1" href="https://nebula-hisser-ddb.notion.site/FE-37b718590d364407b0b9953df7fb6b44"
+            target="_blank">
+            이력서 보기
+          </a href="#">
+
+          <a class="channel-icon mr-1" href="https://github.com/hhnssl" target="_blank">
+            <i class='bx bxl-github'></i>
+            <span>깃허브</span>
+          </a>
+
+          <a class="channel-icon mr-1" href="https://velog.io/@losnah5h" target="_blank">
+            <i class='bx bxl-blogger'></i>
+            <span>블로그</span>
+          </a>
+        </div>
       </div>
 
-      <div class="home__channel">
-        <a href="https://github.com/hhnssl" target="_blank">
-          <i class='bx bxl-github'></i>
-        </a>
-        <a href="https://velog.io/@losnah5h" target="_blank">
-          <i class='bx bxl-blogger'></i>
-        </a>
+
+      <div class="home__photo">
+        <img class="home__img" src="./assets/img/profile.png" alt="프로필 사진">
       </div>
 
-      <div class="home__photo"></div>
+
     </section>
+
+    <!-- About -->
+
+
   </main>
 
   <!-- 푸터 -->

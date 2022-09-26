@@ -144,7 +144,7 @@ a {
 
 :root {
   --color-primary: #3e6ff4;
-  --color-secondary: #3e6ff4;
+  --color-secondary: #8cabfe;
   --color-white: #fff;
   --color-black: #0d1730;
 }
@@ -153,14 +153,31 @@ body {
   font-family: "Noto Sans KR", sans-serif;
 }
 
+.layout-header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.layout-wrapper {
+  margin: 0 auto;
+  padding: 0 2rem;
+  max-width: 1024px;
+}
+
+.mr-1 {
+  margin-right: 0.5rem;
+}
+
 header {
-  padding: 1.3rem;
+  padding: 1.4rem 0;
   text-align: center;
   vertical-align: middle;
   box-shadow: 0 0 3px rgba(57, 63, 72, 0.2);
+  background-color: var(--color-white);
 }
 header .header__anchors {
-  margin: 0 auto;
   display: flex;
 }
 header .header__anchors .header__title {
@@ -174,18 +191,55 @@ header .header__anchors .header__title a .name-strong {
   font-size: 1.4rem;
   vertical-align: middle;
 }
-header .header__anchors .nav .nav__list {
+header .header__anchors .header__nav .nav__list {
   display: flex;
   font-size: 1.2rem;
   font-weight: 500;
 }
-header .header__anchors .nav .nav__list .nav__item {
-  margin-right: 1.5rem;
+header .header__anchors .header__nav .nav__list .nav__item {
+  margin-left: 1.5rem;
   font-weight: 300;
   font-family: "Poppins", sans-serif;
 }
 
-.wrapper {
-  margin: 0 1rem;
-  max-width: 1024px;
+main {
+  margin: 5rem 0 0;
+}
+main .home {
+  padding-top: 3rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #eee;
+}
+main .home .home__profile {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+main .home .home__profile .home__intro {
+  margin-bottom: 2rem;
+  line-height: 4.5rem;
+  font-size: 3rem;
+  font-weight: 200;
+}
+main .home .home__profile .home__intro .name-strong {
+  font-weight: 400;
+}
+main .home .home__profile .home__channel .resume-link {
+  padding: 0.5rem 0.8rem;
+  border-radius: 10px;
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  font-weight: 500;
+}
+main .home .home__profile .home__channel .channel-icon {
+  font-size: 1rem;
+}
+main .home .home__photo {
+  text-align: center;
+}
+main .home .home__photo .home__img {
+  max-width: 80%;
 }/*# sourceMappingURL=styles.css.map */

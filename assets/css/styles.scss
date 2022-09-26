@@ -2,26 +2,46 @@
 
 :root {
   --color-primary: #3e6ff4;
-  --color-secondary: #3e6ff4;
+  --color-secondary: #8cabfe;
   --color-white: #fff;
   --color-black: #0d1730;
 }
 
 body {
   font-family: 'Noto Sans KR', sans-serif;
+  // background-color: #eee;
+}
+
+// 레이아웃
+.layout-header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.layout-wrapper {
+  margin: 0 auto;
+  padding: 0 2rem;
+  max-width: 1024px;
+}
+
+// 마진
+.mr-1 {
+  margin-right: 0.5rem;
 }
 
 // 헤더
 header {
-  padding: 1.3rem;
+  padding: 1.4rem 0;
   text-align: center;
   vertical-align: middle;
   box-shadow: 0 0 03px rgba(57, 63, 72, 0.2);
 
-  // background-color: #eee;
+  background-color: var(--color-white);
 
   .header__anchors {
-    margin: 0 auto;
+    // margin: 0 auto;
     display: flex;
 
     .header__title {
@@ -38,8 +58,7 @@ header {
       }
     }
 
-    .nav {
-      // float: right;
+    .header__nav {
       .nav__list {
         display: flex;
 
@@ -47,7 +66,7 @@ header {
         font-weight: 500;
 
         .nav__item {
-          margin-right: 1.5rem;
+          margin-left: 1.5rem;
           font-weight: 300;
           font-family: 'Poppins', sans-serif;
         }
@@ -57,12 +76,58 @@ header {
 }
 
 // 메인
-// Home
-.home {
-}
+main {
+  margin: 5rem 0 0;
 
-// 레이아웃
-.wrapper {
-  margin: 0 1rem;
-  max-width: 1024px;
+  // Home
+  .home {
+    padding-top: 3rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #eee;
+
+    .home__profile {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      // background-color: red;
+
+      .home__intro {
+        margin-bottom: 2rem;
+
+        line-height: 4.5rem;
+        font-size: 3rem;
+        font-weight: 200;
+
+        .name-strong {
+          font-weight: 400;
+        }
+      }
+
+      .home__channel {
+        .resume-link {
+          padding: 0.5rem 0.8rem;
+          // border: 2px solid var(--color-secondary);
+          border-radius: 10px;
+          background-color: var(--color-primary);
+          color: var(--color-white);
+          font-weight: 500;
+        }
+
+        .channel-icon {
+          // margin-right: 0.5rem;
+          font-size: 1rem;
+        }
+      }
+    }
+
+    .home__photo {
+      text-align: center;
+      .home__img {
+        max-width: 80%;
+      }
+    }
+  }
 }
