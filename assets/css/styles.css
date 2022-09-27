@@ -144,7 +144,7 @@ a {
 
 :root {
   --color-primary: #3e6ff4;
-  --color-secondary: #8cabfe;
+  --color-secondary: #234ab5;
   --color-white: #fff;
   --color-black: #0d1730;
 }
@@ -168,6 +168,19 @@ body {
 
 .mr-1 {
   margin-right: 0.5rem;
+}
+
+.mt-1 {
+  margin-top: 4rem;
+}
+
+.title {
+  margin-bottom: 3rem;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  font-size: 3.5rem;
+  font-weight: 600;
+  color: var(--color-primary);
 }
 
 header {
@@ -242,4 +255,49 @@ main .home .home__photo {
 }
 main .home .home__photo .home__img {
   max-width: 80%;
+}
+main .about .about__contents {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+main .about .about__contents .about__img {
+  max-width: 40%;
+  border-radius: 10px;
+}
+main .about .about__contents .about-talk {
+  padding: 0 4rem;
+  font-size: 1.2rem;
+  line-height: 2rem;
+}
+main .skills {
+  font-family: "Poppins", sans-serif;
+}
+main .skills .skills__title {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #555;
+}
+main .skills .skills__list {
+  margin-bottom: 2rem;
+  display: flex;
+  padding: 2rem 0;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+main .skills .skills__list .skills__item {
+  margin-right: 0.7rem;
+  padding: 1rem;
+  flex: 1 1 50%;
+  border-radius: 10px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 5px 0px;
+}
+main .skills .skills__list .skills__item:last-of-type {
+  margin-right: 0;
+}
+main .skills .skills__list .skills__item .skills__icon {
+  margin-right: 0.5rem;
+  vertical-align: middle;
+  font-size: 2rem;
+  color: var(--color-secondary);
 }/*# sourceMappingURL=styles.css.map */

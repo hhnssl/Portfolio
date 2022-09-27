@@ -2,7 +2,7 @@
 
 :root {
   --color-primary: #3e6ff4;
-  --color-secondary: #8cabfe;
+  --color-secondary: #234ab5;
   --color-white: #fff;
   --color-black: #0d1730;
 }
@@ -24,11 +24,25 @@ body {
   margin: 0 auto;
   padding: 0 2rem;
   max-width: 1024px;
+  // height: 100vh;
 }
 
 // 마진
 .mr-1 {
   margin-right: 0.5rem;
+}
+
+.mt-1 {
+  margin-top: 4rem;
+}
+
+.title {
+  margin-bottom: 3rem;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  font-size: 3.5rem;
+  font-weight: 600;
+  color: var(--color-primary);
 }
 
 // 헤더
@@ -127,6 +141,73 @@ main {
       text-align: center;
       .home__img {
         max-width: 80%;
+      }
+    }
+  }
+
+  // About
+  .about {
+    // margin-top: 2rem;
+    // background-color: #555;
+
+    .about__contents {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .about__img {
+        max-width: 40%;
+        border-radius: 10px;
+      }
+
+      .about-talk {
+        padding: 0 4rem;
+        font-size: 1.2rem;
+        line-height: 2rem;
+        // background-color: #eee;
+      }
+    }
+  }
+
+  // Skills
+  .skills {
+    font-family: 'Poppins', sans-serif;
+
+    .skills__title {
+      font-size: 2rem;
+      font-weight: 600;
+      color: #555;
+    }
+
+    .skills__list {
+      margin-bottom: 2rem;
+      display: flex;
+
+      // justify-content: space-around;
+
+      padding: 2rem 0;
+      font-size: 1.3rem;
+      font-weight: 600;
+      // background-color: #eee;
+
+      .skills__item {
+        margin-right: 0.7rem;
+        padding: 1rem;
+        flex: 1 1 50%;
+        // line-height: 1rem;
+        border-radius: 10px;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 5px 0px;
+
+        &:last-of-type {
+          margin-right: 0;
+        }
+
+        .skills__icon {
+          margin-right: 0.5rem;
+          vertical-align: middle;
+          font-size: 2rem;
+          color: var(--color-secondary);
+        }
       }
     }
   }
