@@ -151,6 +151,7 @@ a {
 
 body {
   font-family: "Noto Sans KR", sans-serif;
+  height: 100%;
 }
 
 .layout-header {
@@ -164,6 +165,9 @@ body {
   margin: 0 auto;
   padding: 0 2rem;
   max-width: 1024px;
+}
+.layout-wrapper:not(:first-child) {
+  padding-top: 5rem;
 }
 
 .mr-1 {

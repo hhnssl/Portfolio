@@ -9,7 +9,7 @@
 
 body {
   font-family: 'Noto Sans KR', sans-serif;
-  // background-color: #eee;
+  height: 100%;
 }
 
 // 레이아웃
@@ -24,7 +24,10 @@ body {
   margin: 0 auto;
   padding: 0 2rem;
   max-width: 1024px;
-  // height: 100vh;
+
+  &:not(:first-child) {
+    padding-top: 5rem;
+  }
 }
 
 // 마진
@@ -55,7 +58,6 @@ header {
   background-color: var(--color-white);
 
   .header__anchors {
-    // margin: 0 auto;
     display: flex;
 
     .header__title {
