@@ -241,6 +241,98 @@ main {
       }
     }
   }
+
+  // Contact
+  .contact {
+    .contact__list {
+      display: flex;
+      // background-color: #eee;
+      justify-content: center;
+      gap: 1.5rem;
+
+      .contact__item {
+        .contact__kakao {
+          .contact__kakao-img {
+            width: 50px;
+            height: 50px;
+            border-radius: 10px;
+            box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+          }
+        }
+
+        .contact__tel {
+          width: 50px;
+          height: 50px;
+          border-radius: 10px;
+          box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+          border: 1px solid rgba($color: #eee, $alpha: 0.5);
+          background-color: #fff;
+          cursor: pointer;
+
+          i {
+            font-size: 2rem;
+          }
+        }
+      }
+    }
+
+    .contact__form-title {
+      margin-top: 3.5rem;
+      text-align: center;
+      font-size: 1.2rem;
+      font-weight: 500;
+    }
+
+    .contact__form {
+      // background-color: #eee;
+      padding: 0 15rem;
+      display: flex;
+      flex-direction: column;
+      margin-top: 2rem;
+
+      .form__label {
+        margin: 0 0 5px 1rem;
+        font-size: 12px;
+        color: #666;
+      }
+
+      .form__mail {
+        margin-bottom: 1rem;
+        padding: 1rem;
+        border-radius: 10px;
+        border: 2px solid var(--color-primary);
+
+        &::placeholder {
+          font-family: 'Noto Sans KR', sans-serif;
+          color: #aaa;
+          // font-size: 0.8rem;
+          letter-spacing: 2px;
+        }
+      }
+
+      .form__comments {
+        margin-bottom: 1rem;
+        padding: 1rem;
+        border-radius: 10px;
+        border: 2px solid var(--color-primary);
+
+        &::placeholder {
+          font-family: 'Noto Sans KR', sans-serif;
+          color: #aaa;
+          letter-spacing: 2px;
+        }
+      }
+    }
+
+    .form__submit-btn {
+      margin: 0 auto 2rem;
+      padding: 1rem 0.5rem;
+      width: 200px;
+      border: none;
+      border-radius: 10px;
+      background-color: var(--color-primary);
+    }
+  }
 }
 
 // 푸터

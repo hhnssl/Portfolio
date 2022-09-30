@@ -56,7 +56,7 @@
           <a class="resume-link mr-1" href="https://nebula-hisser-ddb.notion.site/FE-37b718590d364407b0b9953df7fb6b44"
             target="_blank">
             이력서 보기
-          </a href="#">
+          </a>
 
           <a class="channel-icon mr-1" href="https://github.com/hhnssl" target="_blank">
             <i class='bx bxl-github'></i>
@@ -143,8 +143,35 @@
     </section>
 
     <!-- Contact -->
-    <section class="contact" id="contact">
+    <section class="contact layout-wrapper" id="contact">
       <h2 class="title">Contact</h2>
+      <ul class="contact__list">
+        <li class="contact__item">
+          <a class="contact__kakao" href="https://open.kakao.com/o/s7NKJHEe" target="_blank">
+            <img class="contact__kakao-img" src="./assets/img/kakaotalk.png" alt="카카오톡 오픈채팅 참여하기">
+          </a>
+        </li>
+        <li class="contact__item">
+          <!-- <span class="contact__tel">Tel. 010 - 2658 - 0634</span> -->
+          <button class="contact__tel">
+            <i class='bx bxs-phone'></i>
+          </button>
+        </li>
+      </ul>
+
+      <p class="contact__form-title">메일로 연락하기</p>
+      <form class="contact__form" method="post" enctype="text/plain" action="mailto:losnah5h@gmail.com">
+        <label class="form__label" for="my-email">To</label>
+        <input class="form__mail" id="my-email" type="email" placeholder="losnah5h@gmail.com" disabled>
+
+        <label class="form__label" for="your-email">From</label>
+        <input class="form__mail" id="your-email" type="email" placeholder="이메일을 입력해주세요">
+
+        <label class="form__label" for="comments">Comments</label>
+        <textarea class="form__comments" id="comments" cols="30" rows="10" placeholder="내용을 입력해주세요."></textarea>
+
+        <button class="form__submit-btn" type="submit">보내기</button>
+      </form>
 
     </section>
 
