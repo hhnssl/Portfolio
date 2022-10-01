@@ -316,8 +316,15 @@ main {
           color: #999;
           margin-left: 1rem;
           // width: 100%;
-          display: inline-block;
           line-height: 50px;
+          // background-color: red;
+
+          // JS로
+          display: inline-block;
+          display: none;
+        }
+
+        &:hover {
           // background-color: red;
         }
       }
