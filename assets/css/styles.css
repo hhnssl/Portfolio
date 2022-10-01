@@ -179,12 +179,24 @@ body {
 }
 
 .title {
+  position: relative;
   margin-bottom: 3rem;
   font-family: "Poppins", sans-serif;
   text-align: center;
-  font-size: 3.5rem;
+  font-size: 3rem;
   font-weight: 600;
   color: var(--color-primary);
+}
+.title::after {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: -1rem;
+  right: 0;
+  height: 3px;
+  width: 7rem;
+  margin: 0 auto;
+  background-color: var(--color-primary);
 }
 
 header {
@@ -219,16 +231,12 @@ header .header__anchors .header__nav .nav__list .nav__item {
   font-family: "Poppins", sans-serif;
 }
 
-main {
-  margin: 5rem 0 0;
-}
 main .home {
-  padding-top: 3rem;
+  padding-top: 9rem;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  background-color: #eee;
 }
 main .home .home__profile {
   display: flex;
@@ -364,52 +372,40 @@ main .contact .contact__form .form__label {
   font-size: 12px;
   color: #666;
 }
-main .contact .contact__form .form__mail {
-  margin-bottom: 1rem;
-  padding: 1rem;
-  border-radius: 10px;
-  border: 2px solid var(--color-primary);
-}
-main .contact .contact__form .form__mail::-moz-placeholder {
-  font-family: "Noto Sans KR", sans-serif;
-  color: #aaa;
-  letter-spacing: 2px;
-}
-main .contact .contact__form .form__mail:-ms-input-placeholder {
-  font-family: "Noto Sans KR", sans-serif;
-  color: #aaa;
-  letter-spacing: 2px;
-}
-main .contact .contact__form .form__mail::placeholder {
-  font-family: "Noto Sans KR", sans-serif;
-  color: #aaa;
-  letter-spacing: 2px;
-}
+main .contact .contact__form .form__mail,
 main .contact .contact__form .form__comments {
   margin-bottom: 1rem;
   padding: 1rem;
   border-radius: 10px;
-  border: 2px solid var(--color-primary);
+  border: 2px solid rgba(170, 170, 170, 0.3);
 }
-main .contact .contact__form .form__comments::-moz-placeholder {
+main .contact .contact__form .form__mail::-moz-placeholder, main .contact .contact__form .form__comments::-moz-placeholder {
   font-family: "Noto Sans KR", sans-serif;
   color: #aaa;
   letter-spacing: 2px;
 }
-main .contact .contact__form .form__comments:-ms-input-placeholder {
+main .contact .contact__form .form__mail:-ms-input-placeholder, main .contact .contact__form .form__comments:-ms-input-placeholder {
   font-family: "Noto Sans KR", sans-serif;
   color: #aaa;
   letter-spacing: 2px;
 }
+main .contact .contact__form .form__mail::placeholder,
 main .contact .contact__form .form__comments::placeholder {
   font-family: "Noto Sans KR", sans-serif;
   color: #aaa;
   letter-spacing: 2px;
 }
+main .contact .contact__form .form__mail:focus,
+main .contact .contact__form .form__comments:focus {
+  outline-color: #234ab5;
+}
 main .contact .form__submit-btn {
-  margin: 0 auto 2rem;
-  padding: 1rem 0.5rem;
-  width: 200px;
+  margin: 1rem 0 3rem auto;
+  padding: 1rem 3rem;
+  color: #fff;
+  font-family: inherit;
+  font-weight: 600;
+  letter-spacing: 3px;
   border: none;
   border-radius: 10px;
   background-color: var(--color-primary);
