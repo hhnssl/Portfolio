@@ -271,6 +271,13 @@ main .home .home__profile .home__channel .channel-icon {
 }
 main .home .home__photo {
   text-align: center;
+  width: 400px;
+  height: 400px;
+  border: 2px solid #eee;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 5px 0px;
+  background-color: var(--color-primary);
 }
 main .home .home__photo .home__img {
   max-width: 80%;
@@ -298,16 +305,19 @@ main .skills .skills__title {
   color: #555;
 }
 main .skills .skills__list {
-  margin-bottom: 2rem;
   display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
   padding: 2rem 0;
   font-size: 1.3rem;
   font-weight: 600;
 }
 main .skills .skills__list .skills__item {
+  display: flex;
+  flex: 1;
+  align-items: center;
   margin-right: 0.7rem;
   padding: 1rem;
-  flex: 1 1 50%;
   border-radius: 10px;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 5px 0px;
 }
@@ -387,7 +397,7 @@ main .contact .contact__form-title {
   font-weight: 500;
 }
 main .contact .contact__form {
-  padding: 0 15rem;
+  padding: 0 12rem;
   display: flex;
   flex-direction: column;
   margin-top: 2rem;
@@ -452,4 +462,38 @@ footer .footer__git {
   margin-right: 3px;
   font-weight: 900;
   color: #fff;
+}
+
+@media screen and (max-width: 859px) {
+  .title {
+    font-size: 2rem;
+  }
+  .title::after {
+    width: 5rem;
+  }
+  main .home {
+    flex-direction: column;
+    text-align: center;
+  }
+  main .home .home__photo {
+    margin-top: 4rem;
+    width: 300px;
+    height: 300px;
+  }
+  main .about .about__contents .about-talk {
+    padding: 0 2rem;
+    font-size: 1rem;
+  }
+  main .skills .skills__list {
+    gap: 1rem;
+  }
+  main .skills .skills__list .skills__item {
+    margin: 0;
+    flex: 1 0 45%;
+  }
+  main .projects .projects__list {
+    padding: 1rem 5rem;
+    flex-direction: column;
+    gap: 2rem;
+  }
 }/*# sourceMappingURL=styles.css.map */
