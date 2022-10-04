@@ -496,4 +496,7 @@ footer .footer__git {
     flex-direction: column;
     gap: 2rem;
   }
+  main .contact .contact__form {
+    padding: 0 8rem;
+  }
 }/*# sourceMappingURL=styles.css.map */

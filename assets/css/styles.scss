@@ -464,5 +464,12 @@ footer {
         gap: 2rem;
       }
     }
+
+    .contact {
+      .contact__form {
+        padding: 0 8rem;
+        // min-width: 400px;
+      }
+    }
   }
 }
