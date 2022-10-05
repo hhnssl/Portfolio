@@ -17,12 +17,14 @@ function closeToggle() {
 }
 navItem.forEach((item) => item.addEventListener('click', closeToggle));
 
-// 카카오톡 메세지 표시
+// 카카오톡 메세지 표시 및 삭제
 contactKakao.addEventListener('mouseover', () => {
   contactKakao.nextSibling.nextSibling.classList.add('show-kakao');
 });
 contactKakao.addEventListener('mouseout', () => {
-  contactKakao.nextSibling.nextSibling.classList.remove('show-kakao');
+  setTimeout(() => {
+    contactKakao.nextSibling.nextSibling.classList.remove('show-kakao');
+  }, 2000);
 });
 
 // 휴대폰번호 메세지 표시
