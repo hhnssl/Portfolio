@@ -1,5 +1,7 @@
 const navToggle = document.getElementById('nav-toggle');
 const navItem = document.querySelectorAll('.nav__item');
+const contactKakao = document.getElementById('contact-kakao');
+const contactPhone = document.getElementById('contact-phone');
 
 // 모바일 버전 nav 토글
 navToggle.addEventListener('click', () => {
@@ -13,5 +15,20 @@ function closeToggle() {
   console.log('ss');
   nav.classList.remove('show-nav');
 }
-
 navItem.forEach((item) => item.addEventListener('click', closeToggle));
+
+// 카카오톡 메세지 표시
+contactKakao.addEventListener('mouseover', () => {
+  contactKakao.nextSibling.nextSibling.classList.add('show-kakao');
+});
+contactKakao.addEventListener('mouseout', () => {
+  contactKakao.nextSibling.nextSibling.classList.remove('show-kakao');
+});
+
+// 휴대폰번호 메세지 표시
+contactPhone.addEventListener('mouseover', () => {
+  contactPhone.lastChild.classList.add('show-phone');
+});
+contactPhone.addEventListener('mouseout', () => {
+  contactPhone.lastChild.classList.remove('show-phone');
+});

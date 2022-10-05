@@ -385,13 +385,18 @@ main .contact .contact__list .contact__item .contact__tel i {
   border-radius: 10px;
   box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
 }
-main .contact .contact__list .contact__item .contact__text {
+main .contact .contact__list .contact__item .contact__kakao-text,
+main .contact .contact__list .contact__item .contact__phone-text {
   font-family: "Noto Sans KR", sans-serif;
   font-size: 1rem;
   color: #999;
   margin-left: 1rem;
   line-height: 50px;
   display: none;
+}
+main .contact .contact__list .contact__item .contact__kakao-text.show-kakao, main .contact .contact__list .contact__item .contact__kakao-text.show-phone,
+main .contact .contact__list .contact__item .contact__phone-text.show-kakao,
+main .contact .contact__list .contact__item .contact__phone-text.show-phone {
   display: inline-block;
 }
 main .contact .contact__form-title {

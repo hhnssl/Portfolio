@@ -293,13 +293,11 @@ main {
         line-height: 50px;
 
         .contact__kakao {
-          // line-height: 50px;
           display: flex;
           .contact__kakao-img {
             display: inline-block;
             width: 50px;
             line-height: 50px;
-            // height: 50px;
             border-radius: 10px;
             box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
           }
@@ -309,24 +307,18 @@ main {
           display: flex;
 
           i {
-            // width: 50px;
-            // height: 50px;
             display: inline-block;
             font-size: 2rem;
             line-height: 50px;
-            // border-radius: 10px;
-            // box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
             border: 1px solid rgba($color: #eee, $alpha: 0.5);
-            // background-color: #fff;
-            // cursor: pointer;
             width: 50px;
-            // height: 50px;
             border-radius: 10px;
             box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
           }
         }
 
-        .contact__text {
+        .contact__kakao-text,
+        .contact__phone-text {
           font-family: 'Noto Sans KR', sans-serif;
           font-size: 1rem;
           color: #999;
@@ -337,12 +329,17 @@ main {
 
           // JS로
           display: none;
-          display: inline-block;
+          // display: inline-block;
 
           &:hover {
             // contact__item 이 호버되면 contact__text의 디스플레이가 인라인 블럭으로..
             // color: red;
             // display: inline-block;
+          }
+
+          &.show-kakao,
+          &.show-phone {
+            display: inline-block;
           }
         }
       }
