@@ -336,12 +336,14 @@ main {
           // background-color: red;
 
           // JS로
-          display: inline-block;
           display: none;
-        }
+          display: inline-block;
 
-        &:hover {
-          // background-color: red;
+          &:hover {
+            // contact__item 이 호버되면 contact__text의 디스플레이가 인라인 블럭으로..
+            // color: red;
+            // display: inline-block;
+          }
         }
       }
     }
@@ -512,6 +514,7 @@ footer {
         top: 1rem;
         font-size: 1.5rem;
         color: #444;
+        cursor: pointer;
       }
 
       .header__nav {
@@ -536,12 +539,17 @@ footer {
             }
           }
         }
+
+        &.show-nav {
+          display: block;
+        }
       }
     }
   }
 
   main {
     .home {
+      padding-top: 5rem;
       .home__profile {
         .home__intro {
           font-size: 2.5rem;
