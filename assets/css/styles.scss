@@ -197,10 +197,10 @@ main {
       }
 
       .about-talk {
-        padding: 0 4rem;
+        padding: 0 3rem;
         font-size: 1.2rem;
         line-height: 2rem;
-        // background-color: #eee;
+        word-break: keep-all;
       }
     }
   }

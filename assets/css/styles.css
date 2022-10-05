@@ -295,9 +295,10 @@ main .about .about__contents .about__img {
   border-radius: 10px;
 }
 main .about .about__contents .about-talk {
-  padding: 0 4rem;
+  padding: 0 3rem;
   font-size: 1.2rem;
   line-height: 2rem;
+  word-break: keep-all;
 }
 main .skills {
   font-family: "Poppins", sans-serif;
