@@ -217,9 +217,7 @@ main {
 
     .skills__list {
       display: flex;
-      // flex: 3;
       flex-wrap: wrap;
-      // 여기 위
 
       margin-bottom: 2rem;
 
@@ -231,11 +229,11 @@ main {
         display: flex;
         flex: 1;
         align-items: center;
-        // 여기 위
         margin-right: 0.7rem;
         padding: 1rem;
         border-radius: 10px;
         box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 5px 0px;
+        background-color: #fff;
 
         &:last-of-type {
           margin-right: 0;
@@ -246,6 +244,11 @@ main {
           vertical-align: middle;
           font-size: 2rem;
           color: var(--color-secondary);
+        }
+
+        &:hover {
+          transform: scale(1.04);
+          transition: transform 0.5s;
         }
       }
     }

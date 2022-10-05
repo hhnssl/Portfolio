@@ -324,6 +324,7 @@ main .skills .skills__list .skills__item {
   padding: 1rem;
   border-radius: 10px;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 5px 0px;
+  background-color: #fff;
 }
 main .skills .skills__list .skills__item:last-of-type {
   margin-right: 0;
@@ -333,6 +334,10 @@ main .skills .skills__list .skills__item .skills__icon {
   vertical-align: middle;
   font-size: 2rem;
   color: var(--color-secondary);
+}
+main .skills .skills__list .skills__item:hover {
+  transform: scale(1.04);
+  transition: transform 0.5s;
 }
 main .projects .projects__list {
   display: flex;
