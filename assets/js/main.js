@@ -12,7 +12,6 @@ navToggle.addEventListener('click', () => {
 
 // 메뉴 클릭시 토글 닫기
 function closeToggle() {
-  console.log('ss');
   nav.classList.remove('show-nav');
 }
 navItem.forEach((item) => item.addEventListener('click', closeToggle));
@@ -34,3 +33,28 @@ contactPhone.addEventListener('mouseover', () => {
 contactPhone.addEventListener('mouseout', () => {
   contactPhone.lastChild.classList.remove('show-phone');
 });
+
+// Scroll Reveal
+// const sr = ScrollReveal({
+//   distance: '60px',
+//   duration: 2000,
+//   // reset: true,
+// });
+
+// sr.reveal(`header, .header__anchors, .header__title, .nav__toggle`, {
+//   origin: 'top',
+//   // interval: 100,
+// });
+
+// function scrollActive(){
+
+// }
+
+// window.addEventListener('scroll', scrollActive)
+
+// ScrollReveal().reveal('header');
+// ScrollReveal().reveal('.home', { delay: 500 });
+// ScrollReveal().reveal('.about', { delay: 500 });
+// ScrollReveal().reveal('.skills', { delay: 500 });
+// ScrollReveal().reveal('.projects', { delay: 500 });
+// ScrollReveal().reveal('.contact', { delay: 500 });
